@@ -13,10 +13,10 @@ add_compile_options(
 add_executable(iostream src/main.cpp)
 
 target_link_options(iostream PRIVATE
-    -nostdlib       # Não liga à biblioteca padrão
-    -e _start       # O teu ponto de entrada nativo do Linux
-    -s              # Remove símbolos inúteis (Strip)
-    -Wl,--gc-sections  # Remove código morto/não utilizado em segurança
+    -nostdlib       
+    -e _start       
+    -s              
+    -Wl,--gc-sections  
 )
 include(CTest)
 enable_testing()
