@@ -1,6 +1,8 @@
 /*
     main.cpp Gonçalo João
     Custom iostream
+    Copyright (c) 2026 Gonçalo João. All rights reserved.
+
 */
 
 #include "iostream.hpp"

@@ -1,6 +1,7 @@
 /*
     Custom Iostream Gonçalo João
     Run on linux kernel
+    Copyright (c) 2026 Gonçalo João. All rights reserved.
 */
 
 #pragma once
