@@ -1,3 +1,8 @@
+/*
+    main.cpp Gonçalo João
+    Custom iostream
+*/
+
 #include "iostream.hpp"
 
 [[noreturn]] inline void sys_exit(sizetype code) {
