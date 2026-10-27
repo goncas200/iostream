@@ -21,7 +21,8 @@
 
 extern "C" void _start() {
     char* a = new char[20];
+    input("Name: ", a, 20);
+    std::cout << a << "\n";
     delete[] a;
-    std::cout << -2147483647 << "\n";
     sys_exit(0);
 }

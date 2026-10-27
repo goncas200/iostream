@@ -124,7 +124,8 @@ namespace std   {
     ostream cout;
 }
 
-const char* input(const char* str) {
+
+void input(const char* str , char* buffer, sizetype buffer_size) {
     std::cout << str;
     static char userinput[4001];
     static char trash[301];
@@ -172,7 +173,9 @@ const char* input(const char* str) {
             }
         }
     }
-    return userinput;
+    for (int i = 0; i < buffer_size && i < bytes_read; ++i) {
+        buffer[i] = userinput[i];
+    }
 }
 
 
