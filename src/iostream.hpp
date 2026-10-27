@@ -14,6 +14,10 @@
 #define MAGICNUM 0x676f6e63616c6f69ULL
 #endif
 
+#ifndef MIN_INT
+#define MIN_INT -2147483648
+#endif
+
 
 void* malloc(sizetype size) {
     void* ptr = nullptr;
@@ -81,6 +85,10 @@ public:
         return cout;
     }
     friend ostream& operator<<(ostream& cout, int str) { // Turns int to str
+        if (str == MIN_INT) {
+            cout.print("-2147483648");
+            return cout;
+        }
         if (str == 0) {
             cout.print("0");
             return cout;
