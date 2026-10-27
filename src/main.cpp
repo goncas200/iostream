@@ -20,8 +20,8 @@
 }
 
 extern "C" void _start() {
-    char* a = new char[20];
-    input("Name: ", a, 20);
+    char* a = new char[10];
+    input("Name: ", a, 10);
     std::cout << a << "\n";
     delete[] a;
     sys_exit(0);

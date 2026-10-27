@@ -173,7 +173,7 @@ void input(const char* str , char* buffer, sizetype buffer_size) {
             }
         }
     }
-    for (int i = 0; i < buffer_size && i < bytes_read; ++i) {
+    for (int i = 0; i < buffer_size-1 && i < bytes_read; ++i) {
         buffer[i] = userinput[i];
     }
 }
